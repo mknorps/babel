@@ -1,2 +1,8 @@
-main :: IO ()
-main = putStrLn "Test suite not yet implemented"
+module Main where
+
+import qualified LibSpec as LS
+
+import Test.Hspec
+
+main = hspec $ do
+  LS.spec
